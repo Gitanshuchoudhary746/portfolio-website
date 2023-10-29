@@ -1,0 +1,150 @@
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background-color:whitesmoke;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}   
+.box{
+    position:static;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 15px;
+    
+}
+.contact h3{
+    color: blueviolet;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+/* form*/
+
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: blueviolet;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid black;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid black;
+    resize: none;
+    min-height: 220px; 
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background-color: blueviolet;
+    color: #e7e7ec;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    max-width: 120px;
+    font-weight: 500;
+    padding: 14px 15px;
+    border-radius: 33px;
+}
+<section id="contactus">
+        <div class="content">
+          <h1>Contact Me....</h1>
+          <h2>- get in touch -</h2>
+        </div>
+        <div class="box">
+          <div class="contact form">
+            <h3>Send a message</h3>
+            <form>
+              <div class="formBox">
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>First Name</span>
+                    <input type="text" placeholder="Joe">
+                  </div>
+                  <div class="inputBox">
+                    <span>Last Name</span>
+                    <input type="text" placeholder="Biden">
+                  </div>
+                </div>
+
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>Email</span>
+                    <input type="text" placeholder="Joe123@xyz.com">
+                  </div>
+                  <div class="inputBox">
+                    <span>Mobile</span>
+                    <input type="text" placeholder="+91 9032930278">
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="inputBox">
+                    <span>Message</span>
+                    <textarea placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputBox">
+                    <input type="submit" value="send">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact info"></div>
+            <h3>Contact Info</h3>
+            <div class="InfoBox">
+              <span></span>
+              <p>Kalinga Institute Of Industrail Technology(KIIT),Patia,Bhubaneshwar-751024 <br>INDIA</p>
+            </div>
+            <div class="InfoBox">
+              <span></span>
+              <a href="gitanshu813109@gmail.com">gitanshu813109@gmail.com</a>
+            </div>
+            <div class="InfoBox">
+              <span></span>
+              <a href="+919346809212">+91 9346809212</a>
+            </div>
+          <div class="contact map"></div>
+        </div>
+      </section>

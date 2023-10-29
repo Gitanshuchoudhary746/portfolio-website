@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gitanshu-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="edu">
+        <div class="left">Gitanshu's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#secondsection">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="https://github.com/Gitanshuchoudhary746">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="firstleft">
+          Hi, my name is <span class="purple">Gitanshu</span>
+          <div>and I am a passionate</div>
+          <span id="element" class="purple"></span>
+          <div class="Hire">
+            <a href="">Hire Me</a>
+          </div>
+          <p class="notice">download resume</p>
+        </div>
+        <div class="firstright">
+          <img src="myself-pic.jpeg" alt="error" />
+        </div>
+      </section>
+      <hr />
+      <div class="content">
+        <h1>About...</h1>
+      </div>
+      <section id="secondsection">
+        <div class="secondleft">
+          <div class="head">
+            <p>About Me</p>
+          </div>
+          <hr />
+          <div class="bdy">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              soluta id deserunt! Repudiandae ab quam ipsa dolorum odio tenetur
+              voluptatem atque nostrum obcaecati in molestiae maxime et alias,
+              magnam voluptates doloribus nisi dolore quis recusandae assumenda
+              provident! Modi nostrum adipisci ipsum aperiam in atque quisquam
+              dolore nisi harum fugit? Autem quis quos numquam facere nesciunt
+              eius recusandae iusto explicabo magni. Repellat nisi enim deleniti
+              iste temporibus earum debitis? Iste temporibus quidem aperiam
+              facere beatae? Cupiditate animi deserunt mollitia perspiciatis
+              amet ut culpa, reiciendis architecto, corporis dolore cum. Dolore
+              odio voluptatum sequi cum temporibus, sit exercitationem
+              aspernatur debitis quibusdam a necessitatibus.
+            </p>
+          </div>
+        </div>
+
+        <div class="secondright">
+          <div class="simage">
+            <img src="self.jpg" alt="error" />
+          </div>
+        </div>
+      </section>
+      <hr />
+      <div class="content">
+        <h1>Contact Me....</h1>
+        <h2>- get in touch -</h2>
+      </div>
+      <section id="contact">
+        <div class="container">
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">
+                  Kalinga Institute of Industrail Technology(KIIT), Patia
+                </div>
+                <div class="text-two">Bhubaneshwar-751024</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+91 9346809212</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">gitanshu813109@gmail.com</div>
+                <div class="text-two">22053160@kiit.ac.in</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+              <p>
+                If you have any work from me or any types of quries related to
+                my tutorial, you can send me message from here. It's my pleasure
+                to help you.
+              </p>
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name" />
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email" />
+                </div>
+                <div class="input-box message-box">
+                  <textarea placeholder="Write a message"></textarea>
+                </div>
+                <div class="button">
+                  <input type="button" value="Send Now" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web developer",
+          "Programmer",
+          "Photo editor",
+          "Video editor",
+          "Graphic designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
